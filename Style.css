@@ -11,13 +11,16 @@ h1,h2 {
 a {
     padding: 10px;
     margin: 50px;
-    background-color: blue;
+    background-image: linear-gradient(to bottom right, red, yellow);
     color: white;
     border-color: black;
     border-style: dashed;
     text-transform: capitalize;
     letter-spacing: normal;
     font-size: 5vw;
+}
+a:hover{
+    background-color: blueviolet;
 }
 /*
 body {
