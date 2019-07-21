@@ -1,0 +1,26 @@
+h1,h2 {
+    color: red;
+    background-color: aqua;
+    border-style: dashed;
+    border-color: black;
+    border-width: thick;
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+a {
+    padding: 10px;
+    margin: 50px;
+    background-color: blue;
+    color: white;
+    border-color: black;
+    border-style: dashed;
+    text-transform: capitalize;
+    letter-spacing: normal;
+    font-size: 5vw;
+}
+/*
+body {
+     background-image: url("gym.jpg");
+}
+*/
