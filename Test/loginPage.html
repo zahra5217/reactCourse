@@ -78,6 +78,25 @@
                 font-size: 1.5vw;
                 color:gray;
             }
+            /* Pay attention to priority of these two blocks
+            second one workes.*/
+            @media only screen and (max-width: 450px)
+            {
+                body{
+                    background-color: beige;
+                }
+                .img1{
+                    display: none;
+                }
+            }
+            @media only screen and (max-width: 700px)
+            {
+                body{
+                    background-color:blueviolet;
+                }
+
+            }
+
         </style>
 
     </head>
