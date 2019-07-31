@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <body>
+
+    <h2>JavaScript</h2>
+
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p id="demo">this is a p</p>
+    <p id ='counter'>Globalcounter</p>
+    <button onclick="inputEvent()"> A new Event</button>
+    <input id = 'name' type = text>
+
+    <button onclick="counter()">Counter</button>
+
+   <script>
+     //------------- JavaScripts ---------------------
+     document.getElementById("demo").innerHTML="Hello JS";
+     console.log("hello azizam!")
+     var x=2
+     x=3
+     var y=5
+     x=x+y
+     document.getElementById("demo").innerHTML=x;
+     //----------------------------------------------
+
+    //------------- introduction to functions --------
+     function sum(p1,p2)
+     {
+      document.getElementById("demo").innerHTML=p1+p2;
+     }
+     sum(3,7);
+     //----------------------------------------------
+
+     //-------------- String Methods -----------------
+   
+     function lendd(w)
+     {
+      document.getElementById("demo").innerHTML= w.length;
+
+     }
+
+     function indexof(s,w)
+     {
+       return s.lastIndexOf(w);
+     }
+
+     var date = '1398/5/6Z17:50:12'
+     console.log(date.slice(0,8));
+     var status='penDing'
+     console.log(status.toUpperCase())
+      indexof("i love you", "you")
+     //-----------------------------------------------
+
+    //----------  Captalize first char ------------
+    function CapitalFirst(word)
+    {
+      word.toLowerCase();
+      var FirstChar = word[0].toUpperCase();
+      var newword = word.slice(1);
+      newword = FirstChar+newword;
+      return newword;
+    } 
+    
+    var word = 'i bring you a gift!';
+    console.log( word, "===>", CapitalFirst(word))
+
+    word = 'who is the best!';
+    console.log( word, "===>", CapitalFirst(word))
+
+    //------------------------------------------
+    var dish = "i love Spageti !"
+    console.log(dish);
+    dish = dish.replace('Spageti', 'ghormesabzi')
+    console.log(dish);
+    //------------------------------------------
+
+    //------------ Events ---------------------
+    var Globalcounter = 0;
+    function inputEvent()
+    {
+      var value = document.getElementById('name').value;
+      value = Number(value)
+      document.getElementById('demo').innerHTML = typeof value;
+    }
+    
+    function counter()
+    {
+      ++Globalcounter
+      document.getElementById('counter').innerHTML = Globalcounter;
+    }
+    document.getElementById('counter').innerHTML = new Date();
+   </script>
+    
+
+  </body>
+</html>

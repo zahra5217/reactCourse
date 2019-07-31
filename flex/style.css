@@ -1,0 +1,21 @@
+.body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contact-area{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 30%;
+    background-color: yellow;
+}
+.conext-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    background-color: aquamarine;
+}
