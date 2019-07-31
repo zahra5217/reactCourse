@@ -7,10 +7,11 @@
     <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
     <p id="demo">this is a p</p>
     <p id ='counter'>Globalcounter</p>
-    <button onclick="inputEvent()"> A new Event</button>
+    <button onclick="inputEvent()"> A new Event</button> 
     <input id = 'name' type = text>
 
     <button onclick="counter()">Counter</button>
+
 
    <script>
      //------------- JavaScripts ---------------------
@@ -89,7 +90,69 @@
       document.getElementById('counter').innerHTML = Globalcounter;
     }
     document.getElementById('counter').innerHTML = new Date();
+
+    //------------- Objects -----------------------
+    var conversation =
+    [
+      {
+      name:"Zahra",
+      lastname: "Akbari",
+      email: "zak@gmail.com",
+      latestMessage: "jdlkjsdlkjs",
+      date:"3/2",
+      unreadMessage:"4",
+      message:["AAA","BBB"] ,
+      fullName: () =>      //??????????????
+         this.name +" "+ this.lastname
+      },
+      {
+      name:"Soghra",
+      lastname: "Hamdami",
+      email: "sham@gmail.com",
+      latestMessage: "8080ojdojo",
+      date:"3/2",
+      unreadMessage:"7",
+      message:["AAA","BBB"] ,
+      fullName: () =>      //??????????????
+         this.name +" "+ this.lastname
+      },
+
+    ]
+    //document.getElementById("demo").innerHTML = conversation.date;
+    //document.getElementById("demo").innerHTML = conversation["name"];
+
+    document.getElementById("demo").innerHTML = conversation[0].fullName();
+
+//---------- Arrays ----------------------
+    student = ["Soosan", "Zahra", "Ziba"]
+    student[3] = "Ghorban"
+    console.log(student[3])
+    student.push("Zeinab")
+    console.log(student[4])
+    console.log(student.length)
+    student.pop()
+    console.log(student.length)
+    student.shift()
+    console.log(student)
+    student.shift()
+    console.log(student)
+    student.unshift("hasti")
+    console.log(student)
+    delete student[0]
+    console.log(student)
+
+    student.push("Reza","Mohammad")
+    console.log(student)
+    student.splice(1,2,"Gholi", "Hassan")
+    console.log(student)
+
+    conversation.splice(1,1,{
+      name:"jgfjk", lastname:"kglfk"
+    })
+    console.log(conversation)
    </script>
+
+   
     
 
   </body>
